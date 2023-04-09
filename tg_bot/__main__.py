@@ -152,7 +152,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username))],
                      [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/aboutme_sanu"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/sanubots")],
-                     [InlineKeyboardButton(text="🎬 Movie Channel", url="sanusmoviesch"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                     [InlineKeyboardButton(text="🎬 Movie Channel", url="t.me/sanusmoviesch"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
         update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
